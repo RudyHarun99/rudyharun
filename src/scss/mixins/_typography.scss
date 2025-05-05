@@ -1,5 +1,6 @@
 @use "sass:map";
 @use '@/scss/variables/fonts' as f;
+@use '@/scss/functions/rem-calc' as *;
 // prettier-ignore
 
 $sizes: (

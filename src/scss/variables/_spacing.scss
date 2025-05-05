@@ -1,3 +1,5 @@
+@use '@/scss/functions/rem-calc' as *;
+
 $spacing: (
   'spacing-none': (
     spacing-size: rem-calc(0),
