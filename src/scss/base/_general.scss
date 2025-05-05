@@ -1,0 +1,26 @@
+// @import '../variables/_fonts.scss';
+// @import '../functions/_rem-calc.scss';
+// @import '@/scss/variables/fonts.scss';
+// @import '@/scss/functions/rem-calc.scss';
+@use '@/scss/variables/fonts.scss' as font;
+@use '@/scss/functions/rem-calc.scss' as rem;
+
+:root {
+  font-family: font.$font-family-red-hat-display;
+}
+
+body {
+  background: get-color('neutral', 600);
+  // overflow: hidden;
+}
+
+.container {
+  max-width: rem.rem-calc(1216);
+  margin: 0 auto;
+  padding: 0 rem.rem-calc(20);
+
+  @include md {
+    padding: 0 rem.rem-calc(32);
+    // padding: get-spacing('spacing-8xl') get-spacing('spacing-11xl');
+  }
+}

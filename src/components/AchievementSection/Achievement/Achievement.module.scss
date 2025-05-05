@@ -1,0 +1,10 @@
+.achievement {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem-calc(12);
+  row-gap: rem-calc(20);
+
+  @include md {
+    gap: rem-calc(20);
+  }
+}

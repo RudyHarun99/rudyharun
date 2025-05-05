@@ -1,0 +1,7 @@
+.journeyWrapper {
+  display: flex;
+  flex-direction: column;
+  // text-align: center;
+  align-items: center;
+  gap: get-spacing('spacing-lg');
+}
