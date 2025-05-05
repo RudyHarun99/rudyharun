@@ -1,8 +1,6 @@
-// @import '../variables/_spacing.scss';
 @use "sass:map";
-// @import '@/scss/variables/spacing.scss';
-@use '@/scss/variables/spacing.scss' as *;
+@use '@/scss/variables/spacing.scss' as s;
 
 @function get-spacing($name) {
-  @return map.get($spacing, $name);
+  @return map.get(s.$spacing, $name);
 }

@@ -1,7 +1,5 @@
-// @import './functions/';
-// @import './variables/';
-// @import './mixins/';
+@forward 'functions';
+@forward 'variables';
+@forward 'mixins';
+@forward 'base';
 
-@import '@/scss/functions';
-@import '@/scss/variables';
-@import '@/scss/mixins';

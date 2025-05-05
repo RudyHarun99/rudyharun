@@ -1,17 +1,15 @@
-// @import '../variables/_fonts.scss';
-// @import '../functions/_rem-calc.scss';
-// @import '@/scss/variables/fonts.scss';
-// @import '@/scss/functions/rem-calc.scss';
 @use '@/scss/variables/fonts.scss' as font;
+@use '@/scss/functions/get-color.scss' as color;
 @use '@/scss/functions/rem-calc.scss' as rem;
+@use '@/scss/mixins/breakpoints.scss' as bp;
+// @use '@/scss/functions/get-spacing.scss' as spacing;
 
 :root {
   font-family: font.$font-family-red-hat-display;
 }
 
 body {
-  background: get-color('neutral', 600);
-  // overflow: hidden;
+  background: color.get-color('neutral', 600);
 }
 
 .container {
@@ -19,8 +17,9 @@ body {
   margin: 0 auto;
   padding: 0 rem.rem-calc(20);
 
-  @include md {
+  @include bp.md {
     padding: 0 rem.rem-calc(32);
     // padding: get-spacing('spacing-8xl') get-spacing('spacing-11xl');
+    // padding: spacing.get-spacing('spacing-8xl') spacing.get-spacing('spacing-11xl');
   }
 }

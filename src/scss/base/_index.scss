@@ -1,5 +1,5 @@
-@import '@/scss/base/reset.scss';
-@import '@/scss/base/normalize.scss';
-@import '@/scss/base/fontFamily.scss';
-@import '@/scss/base/general.scss';
-@import '@/scss/base/base.background.scss';
+@forward './reset';
+@forward './normalize';
+@forward './fontFamily';
+@forward './general';
+@forward './base.background';

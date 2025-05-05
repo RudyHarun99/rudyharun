@@ -1,5 +1,6 @@
-// prettier-ignore
 @use "sass:map";
+@use '@/scss/variables/fonts' as f;
+// prettier-ignore
 
 $sizes: (
   "display-3xl": (font-size: rem-calc(60), line-height: rem-calc(72)),
@@ -24,7 +25,7 @@ $weights: (
   'extrabold': 800,
 );
 
-@mixin typography($size, $weight, $font-family: $font-family-base) {
+@mixin typography($size, $weight, $font-family: f.$font-family-base) {
   @if map.has-key($sizes, $size) and map.has-key($weights, $weight) {
     // Iterasi properti typography (font-size, line-height, letter-spacing)
     @each $key, $value in map.get($sizes, $size) {

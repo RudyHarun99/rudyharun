@@ -1,8 +1,6 @@
-// @import '../variables/_radius.scss';
 @use "sass:map";
-// @import '@/scss/variables/radius.scss';
-@use '@/scss/variables/radius.scss' as *;
+@use '@/scss/variables/radius.scss' as r;
 
 @function get-radius($name) {
-  @return map.get($radius, $name);
+  @return map.get(r.$radius, $name);
 }

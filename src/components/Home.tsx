@@ -8,7 +8,7 @@ import { CareerJourneySection } from './CareerJourneySection';
 import { CoreSkillSection } from './CoreSkillSection';
 import { ComparisonSection } from './ComparisonSection';
 import { ProjectsSection } from './ProjectsSection';
-import { Testimony } from './Testimony';
+// import { Testimony } from './Testimony';
 import { FAQSection } from './FAQSection';
 import { ContactUs } from './ContactUs';
 import { Footer } from './Footer';
@@ -24,7 +24,7 @@ export const Home: React.FC = () => {
       <CoreSkillSection />
       <ComparisonSection />
       <ProjectsSection />
-      <Testimony />
+      {/* <Testimony /> */}
       <FAQSection />
       <ContactUs />
       <Footer />
